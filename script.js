@@ -37,6 +37,7 @@ if (leadForm) {
 
     const name = String(leadForm.name.value || '').trim();
     const email = String(leadForm.email.value || '').trim();
+    const ownerEmail = String(leadForm.dataset.ownerEmail || '').trim();
 
     if (!name || !email) {
       formMessage.textContent = 'Please enter your name and email.';
@@ -51,7 +52,24 @@ if (leadForm) {
       return;
     }
 
-    formMessage.textContent = 'Thank you. Your details were captured.';
+    if (!ownerEmail || !ownerEmail.includes('@')) {
+      formMessage.textContent = 'Owner email is missing. Please update the form email first.';
+      formMessage.className = 'form-message error';
+      return;
+    }
+
+    const subject = encodeURIComponent('New email list subscriber');
+    const pageLink = window.location.href;
+    const body = encodeURIComponent(
+      `A new subscriber joined your email list.\n\n` +
+        `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Reply: mailto:${email}\n` +
+        `Signup page: ${pageLink}\n`
+    );
+
+    window.location.href = `mailto:${ownerEmail}?subject=${subject}&body=${body}`;
+    formMessage.textContent = 'Opening your email app to notify the site owner...';
     formMessage.className = 'form-message ok';
     leadForm.reset();
   });
