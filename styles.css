@@ -334,6 +334,8 @@ p {
   background: #ffffff;
   color: var(--deep-navy);
   transition: border-color 160ms ease, box-shadow 160ms ease;
+  width: 100%;
+  max-width: 100%;
 }
 
 .lead-form select {
