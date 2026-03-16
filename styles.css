@@ -310,6 +310,14 @@ p {
   max-width: 520px;
 }
 
+.booking .lead-form {
+  max-width: 100%;
+}
+
+.booking .results-strip {
+  margin-top: 1.5rem;
+}
+
 .footer-form {
   display: grid;
   gap: 0.65rem;
