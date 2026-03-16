@@ -31,7 +31,7 @@
       <div class="container booking reveal">
         <h1>Book a Consultation</h1>
         <p>Ready to improve your operations and customer communication? Share a few details below to get started.</p>
-        <form class="lead-form" novalidate>
+        <form id="booking-form" class="lead-form" novalidate action="https://formspree.io/f/mqeyypql" method="POST">
           <label for="full-name">Full Name</label>
           <input id="full-name" name="full-name" type="text" required />
           <label for="business-email">Email Address</label>
@@ -66,9 +66,10 @@
             <option>Flexible / First Available Slot</option>
           </select>
           <button type="submit" class="btn btn-primary">SUBMIT REQUEST</button>
+          <p id="booking-message" class="form-message" aria-live="polite"></p>
         </form>
         <div class="results-strip">
-          <p><strong>Consultation Host:</strong> Lawal Toluwase Tosin, Founder & Lead Virtual Assistant</p>
+          <p><strong>Consultation Host:</strong> Lawal Oloruntosin Toluwalase, Founder & Lead Virtual Assistant</p>
           <p><strong>Email:</strong> ltosin540@gmail.com</p>
           <p><strong>Business:</strong> Posh Global Enterprise</p>
         </div>
