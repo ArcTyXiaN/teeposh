@@ -257,6 +257,69 @@ p {
   margin-bottom: 1.4rem;
 }
 
+.testimonial-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1.5rem;
+  margin-top: 1.6rem;
+}
+
+.testimonial-feature {
+  padding: 1.6rem;
+  background: linear-gradient(160deg, #ffffff 0%, #f3f7ff 100%);
+  border: 1px solid #c9d6f5;
+}
+
+.testimonial-grid {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.testimonial-card {
+  padding: 1.2rem 1.3rem;
+}
+
+.testimonial-head {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, rgba(30, 78, 216, 0.15), rgba(201, 162, 39, 0.25));
+  border: 1px solid #d3dcf5;
+}
+
+.avatar svg {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: var(--deep-navy);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.name {
+  font-weight: 700;
+  color: var(--deep-navy);
+  margin: 0;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #4863a9;
+}
+
 .results-strip {
   padding: 1rem 1.2rem;
   border-radius: var(--radius);
@@ -303,7 +366,8 @@ p {
 @media (max-width: 960px) {
   .hero-grid,
   .cards,
-  .about-grid {
+  .about-grid,
+  .testimonial-layout {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -336,7 +400,8 @@ p {
   .hero-grid,
   .cards,
   .about-grid,
-  .about-intro {
+  .about-intro,
+  .testimonial-layout {
     grid-template-columns: 1fr;
   }
 
