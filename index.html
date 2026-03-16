@@ -7,7 +7,7 @@
   <meta name="description" content="Posh Global Enterprise provides professional virtual support to help businesses manage operations, customer communication, and digital engagement." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,13 +15,13 @@
     <div class="container nav-wrap">
       <a class="brand" href="#top">Posh Global Enterprise</a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav id="site-nav" class="site-nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#results">Results</a>
-        <a href="booking.html">Booking</a>
-        <a href="#contact">Contact</a>
+      <nav id="site-nav" class="site-nav pill-nav">
+        <a href="#home" class="pill">Home</a>
+        <a href="#services" class="pill">Services</a>
+        <a href="#about" class="pill">About</a>
+        <a href="#results" class="pill">Results</a>
+        <a href="booking.html" class="pill">Booking</a>
+        
       </nav>
     </div>
   </header>
@@ -29,42 +29,176 @@
   <main>
     <section id="home" class="hero section">
       <div class="container hero-grid">
-        <div>
+        <div class="hero-copy">
           <p class="kicker">Professional Virtual Support & Operations</p>
           <h1>Run smarter operations and stay connected with your customers.</h1>
           <p class="lead">Posh Global Enterprise supports business owners, entrepreneurs, and startups with daily operations, customer communication, and digital engagement.</p>
-          <p class="focus-list">Focus areas: administrative coordination, lead follow-up systems, social media support, and UI/UX improvements.</p>
+          <div class="hero-stats">
+            <div class="stat-chip">
+              <span class="stat-label">Founder</span>
+              <span class="stat-value">Lawal Oloruntosin Toluwalase</span>
+            </div>
+            <div class="stat-chip">
+              <span class="stat-label">Focus</span>
+              <span class="stat-value">Operations, CRM, Social Support</span>
+            </div>
+          </div>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="booking.html">BOOK A CALL</a>
-            <a class="btn btn-ghost" href="#services">WORK WITH ME</a>
+            <a class="btn btn-ghost" href="booking.html">WORK WITH ME</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-badge">Trusted Support</div>
+          <div class="hero-photo">
+            <img src="image.jpg" alt="Portrait of Lawal Oloruntosin Toluwalase" />
+          </div>
+          <div class="hero-bubble">
+            <p class="bubble-title">Experience</p>
+            <p class="bubble-value">2021 – Present</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt">
+    <section id="services" class="section section-alt dark-panel">
       <div class="container reveal">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial-layout">
-          <article class="card testimonial-feature">
-            <div class="testimonial-head">
-              <span class="avatar" aria-hidden="true">
-                <svg viewBox="0 0 64 64" role="img" focusable="false">
-                  <circle cx="32" cy="24" r="12"></circle>
-                  <path d="M12 56c2-12 12-18 20-18s18 6 20 18"></path>
-                </svg>
-              </span>
+        <div class="section-header light">
+          <h2>My Services</h2>
+          <p>Professional support designed to streamline operations and improve customer engagement.</p>
+        </div>
+        <div class="service-cards">
+          <article class="glass-card">
+            <h3>Virtual Assistant Support</h3>
+            <p>Daily task support, coordination, and follow-through to keep your operations moving.</p>
+          </article>
+          <article class="glass-card">
+            <h3>Customer Support & Client Communication</h3>
+            <p>Inbox management, response workflows, and client updates that build trust.</p>
+          </article>
+          <article class="glass-card">
+            <h3>CRM Management & Data Organization</h3>
+            <p>Pipeline clean-up, lead tracking, and consistent data updates.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container reveal">
+        <div class="section-header">
+          <h2>My Work Experience</h2>
+          <p>Experience in virtual assistance, content support, and CRM organization for growth-focused teams.</p>
+        </div>
+        <div class="experience">
+          <div class="exp-row">
+            <div class="exp-left">
+              <h3>Posh Global Enterprise</h3>
+              <p class="muted">2024</p>
+            </div>
+            <div class="exp-center">
+              <span class="exp-dot"></span>
+              <span class="exp-line"></span>
+            </div>
+            <div class="exp-right">
+              <h3>Virtual Assistance</h3>
+              <p>Operational support, lead management, scheduling, and client follow-ups for daily business continuity.</p>
+            </div>
+          </div>
+          <div class="exp-row">
+            <div class="exp-left">
+              <h3>Brenda creative</h3>
+              <p class="muted">2021</p>
+            </div>
+            <div class="exp-center">
+              <span class="exp-dot"></span>
+              <span class="exp-line"></span>
+            </div>
+            <div class="exp-right">
+              <h3>Content Creation</h3>
+              <p>Video editing, flyer design, and visual assets that support marketing campaigns.</p>
+            </div>
+          </div>
+          <div class="exp-row">
+            <div class="exp-left">
+              <h3>CRM Discipline</h3>
+              <p class="muted">2021</p>
+            </div>
+            <div class="exp-center">
+              <span class="exp-dot"></span>
+              <span class="exp-line"></span>
+            </div>
+            <div class="exp-right">
+              <h3>Pipeline Organization</h3>
+              <p>Data hygiene, lead tracking, and follow-up structure to improve conversion flow.</p>
+            </div>
+          </div>
+          <div class="exp-row">
+            <div class="exp-left">
+              <h3>ALX Africa</h3>
+              <p class="muted">2024</p>
+            </div>
+            <div class="exp-center">
+              <span class="exp-dot"></span>
+              <span class="exp-line"></span>
+            </div>
+            <div class="exp-right">
+              <h3>Virtual Assistance Training</h3>
+              <p>Professional training in digital operations, communication, and service delivery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" class="section">
+      <div class="container">
+        <div class="impact-card compact reveal">
+          <div>
+            <h2>Why Hire Me?</h2>
+            <p>Professional virtual support to save time, improve organization, and strengthen customer communication.</p>
+            <div class="impact-metrics compact">
               <div>
-                <p class="eyebrow">Featured Review</p>
-                <p class="name">ADEL EMPIRE</p>
+                <h3>Reliable Support</h3>
+                <p>Consistent follow-through and clear updates.</p>
+              </div>
+              <div>
+                <h3>Client Care</h3>
+                <p>Prompt, professional communication.</p>
               </div>
             </div>
-            <p>Had the pleasure of working with him and I must say his professionalism and dedication are truly commendable. As a Social Media Manager, Content Creator, Graphic Designer, and Sales & Operations Manager, he consistently delivers quality work and brings creative ideas that help improve brand visibility and engagement.</p>
-            <p>His communication is clear, timely, and very professional, which makes collaboration smooth and productive. He understands project requirements well and always ensures tasks are completed efficiently and to a high standard.</p>
-            <p>I highly recommend his services to anyone looking for someone reliable, creative, and result-driven. It has been a great experience working with him.</p>
-          </article>
-          <div class="testimonial-grid">
-            <article class="card testimonial-card">
+            <a class="btn btn-ghost" href="booking.html">HIRE ME</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-panel">
+      <div class="container reveal">
+        <div class="section-header light">
+          <h2>Testimonials That Speak to Our Results</h2>
+          <p>Real feedback from clients who experienced smoother operations and stronger engagement.</p>
+        </div>
+        <div class="testimonial-carousel" data-carousel>
+          <button class="carousel-btn prev" type="button" aria-label="Previous review" data-carousel-prev>&larr;</button>
+          <div class="carousel-track" data-carousel-track>
+            <article class="card testimonial-slide is-active">
+              <div class="testimonial-head">
+                <span class="avatar" aria-hidden="true">
+                  <svg viewBox="0 0 64 64" role="img" focusable="false">
+                    <circle cx="32" cy="24" r="12"></circle>
+                    <path d="M12 56c2-12 12-18 20-18s18 6 20 18"></path>
+                  </svg>
+                </span>
+                <div>
+                  <p class="eyebrow">Featured Review</p>
+                  <p class="name">ADEL EMPIRE</p>
+                </div>
+              </div>
+              <p>Had the pleasure of working with him and I must say his professionalism and dedication are truly commendable. As a Social Media Manager, Content Creator, Graphic Designer, and Sales & Operations Manager, he consistently delivers quality work and brings creative ideas that help improve brand visibility and engagement.</p>
+              <p>His communication is clear, timely, and very professional, which makes collaboration smooth and productive. He understands project requirements well and always ensures tasks are completed efficiently and to a high standard.</p>
+              <p>I highly recommend his services to anyone looking for someone reliable, creative, and result-driven. It has been a great experience working with him.</p>
+            </article>
+            <article class="card testimonial-slide">
               <div class="testimonial-head">
                 <span class="avatar" aria-hidden="true">
                   <svg viewBox="0 0 64 64" role="img" focusable="false">
@@ -79,7 +213,7 @@
               </div>
               <p>I appreciate your work with my company Tsq kitchens, you have helped me promote my business for advertising my business and promoting it to the next level. Thank you.</p>
             </article>
-            <article class="card testimonial-card">
+            <article class="card testimonial-slide">
               <div class="testimonial-head">
                 <span class="avatar" aria-hidden="true">
                   <svg viewBox="0 0 64 64" role="img" focusable="false">
@@ -94,7 +228,7 @@
               </div>
               <p>Working with you has made my work easy. You help me satisfy my clients needs be it video editing, creating of flyers and other graphic design you are the best in it. You understand my needs and request effortlessly. Thank you for being good at what you do.</p>
             </article>
-            <article class="card testimonial-card">
+            <article class="card testimonial-slide">
               <div class="testimonial-head">
                 <span class="avatar" aria-hidden="true">
                   <svg viewBox="0 0 64 64" role="img" focusable="false">
@@ -110,121 +244,49 @@
               <p>Teeposh, it’s always nice doing business with you. You’re very serious when it comes to your work and always diligent in what you do. The video advert you made for my business came out really nice and I truly appreciate the effort you put into it. Kudos to you, even though you get small “dagbana choko” sometimes. Keep up the good work.</p>
             </article>
           </div>
+          <button class="carousel-btn next" type="button" aria-label="Next review" data-carousel-next>&rarr;</button>
+        </div>
+        <div class="carousel-dots" role="tablist" aria-label="Testimonials">
+          <button class="dot is-active" type="button" aria-label="Go to review 1" data-carousel-dot="0"></button>
+          <button class="dot" type="button" aria-label="Go to review 2" data-carousel-dot="1"></button>
+          <button class="dot" type="button" aria-label="Go to review 3" data-carousel-dot="2"></button>
+          <button class="dot" type="button" aria-label="Go to review 4" data-carousel-dot="3"></button>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container reveal">
-        <h2>About Posh Global Enterprise</h2>
-        <div class="about-intro">
-          <figure class="profile-photo-wrap">
-            <img src="image.jpg" alt="Portrait of Lawal Oloruntosin Toluwalase" class="profile-photo" />
-          </figure>
-          <p>Posh Global Enterprise delivers reliable virtual support that helps business owners stay organized, respond to customers quickly, and keep digital operations running smoothly. Founded by Lawal Oloruntosin Toluwalase.</p>
-        </div>
-        <div class="about-grid">
-          <article class="panel">
-            <h3>Experience</h3>
-            <p>Virtual assistance with hands-on support in lead management and business systems optimization.</p>
-            <p class="muted">Virtual assistance — 2024</p>
-          </article>
-          <article class="panel">
-            <h3>Certifications</h3>
-            <p>ALX Africa — 2024</p>
-          </article>
-          <article class="panel">
-            <h3>Core Strengths</h3>
-            <p>Content creation, CRM discipline, communication, and organization.</p>
-            <p class="muted">Content creation (Brenda creative) — 2021</p>
-            <p class="muted">CRM discipline — 2021</p>
-          </article>
-        </div>
-        <div class="pricing reveal">
-          <h3>Ready to Work Smarter?</h3>
-          <p>If you are a business owner, entrepreneur, or startup looking for professional virtual support to help manage operations, customer communication, and digital engagement, Posh Global Enterprise is here to help.</p>
-          <a class="btn btn-primary" href="booking.html">BOOK A CONSULTATION</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="section section-alt">
-      <div class="container">
-        <h2 class="reveal">Services</h2>
-        <div class="cards">
-          <article class="card reveal">
-            <h3>Virtual Assistant Support</h3>
-            <p>Daily task support, coordination, and follow-through to keep your operations moving.</p>
-          </article>
-          <article class="card reveal">
-            <h3>Customer Support & Client Communication</h3>
-            <p>Inbox management, response workflows, and client updates that build trust.</p>
-          </article>
-          <article class="card reveal">
-            <h3>CRM Management & Data Organization</h3>
-            <p>Pipeline clean-up, lead tracking, and consistent data updates.</p>
-          </article>
-        </div>
-        <p class="muted">Also available: lead generation, sales follow-ups, social media management, UI/UX design support, and general business assistance.</p>
-        <div class="pricing reveal">
-          <h3>Type of Support Needed</h3>
-          <p>Virtual Assistant Support, Administrative & Business Operations Support, Customer Support / Client Communication, Lead Generation & Prospect Management, Social Media Management & Content Support, Sales Support & Client Follow-ups, CRM Management & Data Organization, Email Management & Appointment Scheduling, UI/UX Design, General Business Support, or Not Sure Yet (Need Guidance).</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="results" class="section">
-      <div class="container">
-        <h2 class="reveal">Results & Impact</h2>
-        <div class="cards results-grid">
-          <article class="card reveal">
-            <h3>Operational Support</h3>
-            <p>Administrative coordination, digital management, and lead follow-up systems that save time and keep teams organized.</p>
-          </article>
-          <article class="card reveal">
-            <h3>Digital Presence Support</h3>
-            <p>Social media assistance and UI/UX improvement support to strengthen your digital engagement.</p>
-          </article>
-        </div>
-        <div class="results-strip reveal">
-          <p>Posh Global Enterprise provides professional operational and virtual assistance designed to help businesses save time, improve organization, and strengthen communication with clients and prospects.</p>
-          <p>Support includes administrative coordination, digital management, lead follow-up systems, social media assistance, and UI/UX improvement support for businesses looking to enhance their digital presence.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt">
-      <div class="container reveal">
-        <h2>Join Our Email List</h2>
-        <p>Subscribe for updates, insights, and business resources from Posh Global Enterprise.</p>
-        <form id="lead-form" class="lead-form" novalidate data-owner-email="ltosin540@gmail.com">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" required />
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
-          <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
-          <p id="form-message" class="form-message" aria-live="polite"></p>
-        </form>
-        <p class="muted">This website uses analytics tools to monitor visitor engagement and improve user experience.</p>
-      </div>
-    </section>
-
-
-    <section id="contact" class="section section-alt">
-      <div class="container reveal">
-        <h2>Contact Us</h2>
-        <p>For business inquiries, consultation requests, or partnership opportunities, reach out via email or WhatsApp.</p>
-        <div class="results-strip">
-          <p><strong>Primary Business Email:</strong> ltosin540@gmail.com</p>
-          <p><strong>WhatsApp Contact:</strong> +2348126891669</p>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Posh Global Enterprise. All rights reserved.</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-title">Let’s Connect</p>
+          <p>Subscribe for updates, insights, and business resources from Posh Global Enterprise.</p>
+          <form id="lead-form" class="footer-form" novalidate data-owner-email="ltosin540@gmail.com">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+            <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+            <p id="form-message" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+        <div class="footer-links">
+          <p class="footer-title">Socials</p>
+          <div class="social-links">
+            <a href="https://x.com/your-handle" target="_blank" rel="noopener">X (Twitter)</a>
+            <a href="https://wa.me/2340000000000" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <p class="footer-title">Contact</p>
+          <p>Email: ltosin540@gmail.com</p>
+          <p>WhatsApp: +2348126891669</p>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Posh Global Enterprise. All rights reserved.</p>
     </div>
   </footer>
 
